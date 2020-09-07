@@ -3,7 +3,7 @@
   "description": "Click to go to Wikir. The icon displays the number of occurrences of the current website on Wikir.",
   "version": "0.1",
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["parameterize.js", "background.js"]
   },
   "permissions": [
     "https://935f3a7d7cf4.ngrok.io/v1/search/count",

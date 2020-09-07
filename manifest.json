@@ -1,16 +1,19 @@
 {
-  "manifest_version": 2,
   "name": "Wikir",
+  "description": "Click to go to Wikir. The icon displays the number of occurrences of the current website on Wikir.",
   "version": "0.1",
-  "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": ["content.js"]
-    }
-  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "permissions": [
     "http://hec.localhost.hec:3001/"
-  ]
+  ],
+  "icons": {
+    "128": "icon_16.png"
+  },
+  "browser_action": {
+    "default_icon": "icon_16.png",
+    "default_name": "Wikir occurrences"
+  },
+  "manifest_version": 2
 }

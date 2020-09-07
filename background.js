@@ -5,7 +5,7 @@ function refreshCounter() {
     url = tabs[0].url;
     url = url.replace(/\/$/, '');
     fetch(`https://935f3a7d7cf4.ngrok.io/v1/search/count?url=${url}`).then(r => r.text()).then(result => {
-      chrome.browserAction.setBadgeText({ "text": result, tabId: selectedId });
+      chrome.browserAction.setBadgeText({ "text": result > 0 ? result : "", tabId: selectedId });
     })
   });
 }

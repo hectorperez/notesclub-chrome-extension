@@ -9,5 +9,8 @@
       ],
       "js": ["content.js"]
     }
+  ],
+  "permissions": [
+    "http://hec.localhost.hec:3001/"
   ]
 }

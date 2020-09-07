@@ -1,7 +1,8 @@
 var selectedId = -1;
 function refreshCounter() {
   chrome.tabs.query({lastFocusedWindow: true, active: true}, function (tabs) {
-    const url = tabs[0].url;
+    let url = tabs[0].url;
+    url = url.replace(/\/$/, '') // Removes a slash at the end
     fetch(`https://935f3a7d7cf4.ngrok.io/v1/search/count?url=${url}`).then(r => r.text()).then(result => {
       chrome.browserAction.setBadgeText({ "text": result, tabId: selectedId });
     })

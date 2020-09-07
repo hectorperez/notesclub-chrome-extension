@@ -9,7 +9,7 @@ function refreshCounter() {
 }
 
 chrome.tabs.onUpdated.addListener(function (tabId, props) {
-  if (props.status == "complete" && tabId == selectedId)
+  if (props.status == "loading" && tabId == selectedId)
     refreshCounter();
 });
 

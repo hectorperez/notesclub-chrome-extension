@@ -4,7 +4,7 @@ function refreshCounter() {
   chrome.tabs.query({lastFocusedWindow: true, active: true}, function (tabs) {
     url = tabs[0].url;
     url = url.replace(/\/$/, '');
-    fetch(`https://api.wikir.org/v1/search/count?url=${url}`).then(r => r.text()).then(result => {
+    fetch(`https://e0d9a7672457.ngrok.io/v1/search/count?url=${url}`).then(r => r.text()).then(result => {
       let badge = ""
       if (result > 9) {
         badge = "+9"
@@ -35,5 +35,5 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
 });
 
 chrome.browserAction.onClicked.addListener(function() {
-  chrome.tabs.create({ 'url': `https://www.wikir.org/topic/${parameterize(url, 100)}?content=${url}` })
+  chrome.tabs.create({ 'url': `http://hec.localhost.hec:3001/topic/${parameterize(url, 100)}?content=${url}` })
 });

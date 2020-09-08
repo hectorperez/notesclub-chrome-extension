@@ -6,14 +6,14 @@
     "scripts": ["parameterize.js", "background.js"]
   },
   "permissions": [
-    "https://935f3a7d7cf4.ngrok.io/v1/search/count",
+    "https://e0d9a7672457.ngrok.io/v1/search/count",
     "tabs"
   ],
   "icons": {
-    "128": "icon_16.png"
+    "128": "icon_128.png"
   },
   "browser_action": {
-    "default_icon": "icon_16.png",
+    "default_icon": "icon_128.png",
     "default_name": "Wikir occurrences"
   },
   "manifest_version": 2

@@ -1,7 +1,6 @@
 {
   "name": "Wikir",
-  "description": "Click to go to Wikir. The icon displays the number of occurrences of the current website on Wikir.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "background": {
     "scripts": ["parameterize.js", "background.js"]
   },

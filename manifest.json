@@ -1,12 +1,12 @@
 {
-  "name": "Wikir",
+  "name": "Notes Club",
   "version": "0.1.4",
-  "description": "Wikir.org is a social wiki.",
+  "description": "https://notes.club is all about social notes.",
   "background": {
     "scripts": ["parameterize.js", "background.js"]
   },
   "permissions": [
-    "https://api.wikir.org/v1/search/count",
+    "https://api.notes.club/v1/topics/count",
     "tabs"
   ],
   "icons": {
@@ -18,7 +18,7 @@
   },
   "browser_action": {
     "default_icon": "icon_32.png",
-    "default_name": "Wikir occurrences"
+    "default_name": "Notes.Club occurrences"
   },
   "manifest_version": 2
 }

@@ -1,6 +1,6 @@
 {
   "name": "Notes Club",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "https://notes.club is all about social notes.",
   "background": {
     "scripts": ["parameterize.js", "background.js"]
